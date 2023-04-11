@@ -1,0 +1,601 @@
+<html>
+    <head>
+    <style>
+              *{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+            .row{
+            width:100%;
+            height:7vh;
+            background-color:darkgray;
+            display: flex;
+            justify-content:space-between;
+            padding-top: 18px;
+            position: fixed;
+            z-index: 2;
+            }
+            .right{
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+
+
+            }
+            .left{
+            width: 40%;
+            display: flex;
+            justify-content:space-around;
+
+            }
+            .I{
+            color:darkblue;
+            font-size: 3vh; 
+            /* text-shadow: 0 10px 5px darkviolet; */
+            }
+
+            a{
+                text-decoration: none;
+              }
+              a:hover{
+                color: white;
+                /* text-shadow: 0 10px 5px gold; */
+                  
+              }
+              .menu123{
+            display: none;
+            /* position: relative; */
+            flex-direction: column;
+            position: absolute;
+            /* z-index: 4; */
+            width: 200px;
+            background-color: skyblue;
+            color: white;
+
+          }
+
+          .menu123 a{
+            padding-left: 10px;
+
+              line-height: 1.5;
+            }
+            .I:hover .menu123{
+                display: block;
+            }
+            .x{
+                font-size: 5vh;
+                color: green;
+            }
+
+
+
+            .image{
+                width: 100%;
+                height: 100vh;
+            }
+            .subimage1{
+                position:absolute;
+                top: 85vh;
+                z-index: 1;
+                left: 50%;
+                font-size: 180%;
+                color:white;
+            }
+            .info{
+                display: flex;
+            }
+            .text{
+                width: 50%;
+                margin-left: 5%;
+            }
+            .photo{
+                width: 50%;
+                margin-left: 5%;
+            }
+            .photo img{
+                width: 100%;
+            }
+            .empty{
+                height: 6vh;
+                color: white;
+            }
+            .all{
+                width: 100%;
+                height: 70vh;
+                background-color: white;
+                text-align: center;
+                align-items: center;
+            }
+
+
+            .subpage7{
+    display: flex;
+    height: 15vh;
+    width: 100%;
+    background-color: gray;
+    /* justify-content: space-around; */
+    padding-top: 80px;
+}
+.subpage71 p{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.subpage72 input{
+    background-color:white;
+    border-radius: 5px;
+    height: 8vh;
+    width: 200%;
+    margin-left: 40px;
+    border-color: aqua;
+
+  
+    
+}
+.subpage73 input{
+    height: 8vh;
+    width: 30%;
+    margin-left: 400px;
+    background-color: darkgray;
+    color: white;
+    border-color: black;
+    font-weight: 500;
+}
+/* --------------------------------------------page8----------------- */
+.contacts{
+    height: 80vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subcontacts{
+    height: 70vh;
+    width: 90%;
+    background-color: blue;
+    background-image: url("https://wallpaperaccess.com/full/1685418.jpg");
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+
+
+.locate{
+    display: flex;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+.fa-solid{
+    color: darkgoldenrod;
+    margin-top: 40px;
+}
+.locate p{
+    color: white;
+}
+.contact1 p{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+.contact1 hr{
+    margin-left: 20px;
+    margin-right: 50px;
+    color: white;
+}
+.locate2{
+    font-size: 20px;
+    line-height: 1.8;
+    color: white;
+}
+.text h1{
+    color: blue;
+}
+.text p{
+    color: brown;
+    line-height: 1.5;
+    font-size: 120%;
+}
+.flip{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        height: 40vh;
+    }
+    .d{
+        height: 200px;
+      width: 300px;
+      margin: 50px;
+      perspective: 1000px;
+
+    }
+
+    .d1{
+        position: relative;
+        width:100%;
+        height:100%;
+        transition: 1s;
+ 
+      transform-style: preserve-3d;
+ 
+    }
+    .t1 {
+        width:100%;
+        height:100%;
+      background-color: darkorange;
+ 
+      backface-visibility: hidden;
+      position: absolute;
+    }
+    .t2{
+        width:100%;
+        height:100%;
+      background-color: black;
+ 
+      backface-visibility: hidden;
+      position: absolute;
+      transform: rotateX(180deg);
+        
+    }
+
+    .d:hover .d1{
+      transform: rotatex(-180deg);
+     
+
+    }
+
+    .d1:hover .t2{
+        transform: rotatex(180deg);
+        display: block;
+      background-color: black;
+      backface-visibility: hidden;
+    }
+
+   .t1 h1{
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    margin-top: 30%;
+   }
+
+   .t2 h1{
+    text-align: center;
+    color: white;
+    font-size: 120%;
+    margin-top: 20%;
+   }
+   .t2 p{
+    text-align: center;
+    color: white;
+    font-size: 120%;
+    margin-top: 10%;
+   }
+
+   .t3{
+        width:100%;
+        height:100%;
+      background-color: darkgreen;
+ 
+      backface-visibility: hidden;
+      position: absolute;
+    }
+    .t3 h1{
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    margin-top: 30%;
+   }
+
+
+   .t4{
+        width:100%;
+        height:100%;
+      background-color: darkgrey;
+ 
+      backface-visibility: hidden;
+      position: absolute;
+    }
+    .t4 h1{
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    margin-top: 30%;
+   }
+
+   .t5{
+        width:100%;
+        height:100%;
+      background-color: darkgoldenrod;
+ 
+      backface-visibility: hidden;
+      position: absolute;
+    }
+    .t5 h1{
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    margin-top: 30%;
+   }
+
+   .t6{
+        width:100%;
+        height:100%;
+      background-color: darkmagenta;
+ 
+      backface-visibility: hidden;
+      position: absolute;
+    }
+    .t6 h1{
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    margin-top: 30%;
+   }
+   .t7{
+        width:100%;
+        height:100%;
+      background-color: darkorchid;
+ 
+      backface-visibility: hidden;
+      position: absolute;
+    }
+    .t7 h1{
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    margin-top: 30%;
+   }
+    
+
+
+    </style>
+    </head>
+    <body>
+        
+       
+
+           
+      <div class="row">
+        <div class="left">
+          <div class="I"><a href="index.html"> <B>Home</B></a></div>
+         <div class="I"> <a href="about.html"><B>ABOUT</B></a></div>
+          <div class="I"><B>ROOM</B>
+            <div class="menu123">
+              <a href="room.html">  DELUXE ROOM</a>
+              <a href="room1.html"> DOUBLE DELUXE</a>
+              <a href="room2.html"> EXECUTIVE ROOM</a>
+            </div>
+          
+          </div>
+          <div class="I"><a href="dinner.html"><B>DINING</B></a></div>
+        </div>
+
+        <div class="right">
+          <div class="I"><a href="facilities.html"><B>FACILITIES</B></a></div>
+          <div class="I"><a href="gallery.html"><B>GALLERY</B></a></div>
+          <div class="I"><B>BANQUET</B>
+
+            <div class="menu123">
+              <a href="banquet.html">  VAI JANTA HALL</a>
+              <a href="meeting.html"> MEETING HALL</a>
+              <a href="amarbati.html"> AMARBATI</a>
+            </div>
+
+
+          </div>
+          <div class="I"><a href="contact.html"><B>CONTACT US</B></div></a>
+    </div>
+      </div>
+
+
+
+          <div class="aboutimage">
+            <img class="image" src="aaa.jpg"/>
+            <div class="subimage1">
+                <h1>Village Villa facilities</h1> 
+                
+            </div>
+
+          </div>
+         
+
+
+          <div class="flip">
+            <div class="d">
+          <div class="d1">
+            <div class="t1"><h1>SWIMMING POOL</h1></div>
+            <div class="t2"><h1>SWIMMING POOL </h1>
+                <p>Refresh your family</p>
+            </div>
+          </div>
+            </div>
+        
+            <div class="d">
+                <div class="d1">
+                  <div class="t3"><h1>WIFI</h1></div>
+                  <div class="t2"><h1>WIFI</h1>
+                      <p>High-speed wifi service is available within the hotel premises.</p>
+                  </div>
+                </div>
+                  </div>
+        
+        
+                  <div class="d">
+                    <div class="d1">
+                      <div class="t4"><h1>GARDEN</h1></div>
+                      <div class="t2"><h1>GARDEN </h1>
+                          <p>Enjoy the precious nature</p>
+                      </div>
+                    </div>
+                      </div>
+        
+                      
+        
+            </div>
+            <div class="flip">
+                <div class="d">
+              <div class="d1">
+                <div class="t5"><h1>CONFERENCE HALL</h1></div>
+                <div class="t2"><h1>CONFERENCE HALL </h1>
+                    <p>Capable of conducting the huge meetings</p>
+                </div>
+              </div>
+                </div>
+            
+                <div class="d">
+                    <div class="d1">
+                      <div class="t6"><h1>RESTUARNT & BAR</h1></div>
+                      <div class="t2"><h1>RESTUARNT & BAR </h1>
+                          <p>Special beverages just for you</p>
+                        
+                      </div>
+                    </div>
+                      </div>
+            
+            
+                      <div class="d">
+                        <div class="d1">
+                          <div class="t7"><h1>DINING HALL</h1></div>
+                          <div class="t2"><h1>DINING HALL </h1>
+                              <p>Range of packages for the best price</p>
+                          </div>
+                        </div>
+                          </div>      
+            
+                </div>
+          
+                <div class="empty"></div>
+
+
+
+
+
+
+          <div class="subpage7">
+            <div class="subpage71">
+              <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+            </div>
+            <div class="subpage72"><input type="email" placeholder="E-MAIL ADRESS"/>
+            </div>
+            <div class="subpage73">
+              <input type="button" value="SUBSCRIBE"/>
+            </div>
+                      
+          </div>
+          <div class="contacts">
+            <div class="subcontacts">
+              <div class="contact1">
+                <p>ADRESS</p>
+                <hr>
+                <div class="locate">
+                  <i class="fa-solid fa-location-pin"></i>
+                  <p>Godavari Municipality Ward No. 3,Taukhel, Lalitpur</p>
+                </div>
+                <div class="locate">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <p>+977-1-5560675  5560777  5560062 </p>
+                </div>
+              
+    
+              </div>
+              <div class="contact1">
+                <p>EXPLORE</p>
+                <hr>
+                <div class="locate2">
+                  <p>About Us</p>
+                </div>
+                <div class="locate2">
+                  
+                  <p>contact</p>
+                </div>
+                <div class="locate2">
+
+                  <p>Facility </p>
+                </div>
+                <div class="locate2">
+                  <p>Gallery</p>
+                </div>
+                
+              </div>
+              <div class="contact1">
+
+                <p>QUICK LINKS</p>
+                <hr>
+                <div class="locate2">
+                  <p>Holistic Health Tourism</p>
+                </div>
+                <div class="locate2">
+                  
+                  <p>Executive Room</p>
+                </div>
+                <div class="locate2">
+
+                  <p>Amarbati Hall</p>
+                </div>
+                <div class="locate2">
+                  <p>Resort View</p>
+                </div>
+
+
+              </div>
+              <div class="contact1">
+
+                <p>GET IN TOUCH</p>
+                <hr>
+                <div class="locate2">
+                  <p>Bipana Bhandari (Sales Manager)<br>9841464876</p>
+                </div>
+                <div class="locate2">
+                  
+                  <p>Saroj Acharya (Sales Executive)<br>9841464876</p>
+                </div>
+                <div class="locate2">
+
+                  <p>Praven Acharya (MD)<br>9851221780</p>
+                </div>
+                
+
+
+              </div>
+            </div>
+          </div>    
+
+          <script>
+            var i=0
+            var arr=["a7.jpg","a6.jpg"]
+            function fun()
+            {
+              i=i+1
+              if(i>=arr.length)
+              {
+                i=0
+              }
+              document.getElementById("i1").src=arr[i]
+            }
+            setInterval(fun,2000)
+          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+    </body>
+</html>

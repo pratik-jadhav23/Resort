@@ -1,0 +1,541 @@
+<html>
+    <head>
+    <style>
+      *{
+    margin: 0px;
+    padding: 0px;
+}
+            .row{
+            width:100%;
+            height:7vh;
+            background-color:darkgray;
+            display: flex;
+            justify-content:space-between;
+            padding-top: 18px;
+            position: fixed;
+            z-index: 2;
+            }
+            .right{
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+
+
+            }
+            .left{
+            width: 40%;
+            display: flex;
+            justify-content:space-around;
+
+            }
+            .I{
+            color:darkblue;
+            font-size: 3vh; 
+            /* text-shadow: 0 10px 5px darkviolet; */
+            }
+
+
+            a{
+                text-decoration: none;
+              }
+              a:hover{
+                color: white;
+                /* text-shadow: 0 10px 5px gold; */
+                  
+              }
+              .menu123{
+            display: none;
+            /* position: relative; */
+            flex-direction: column;
+            position: absolute;
+            /* z-index: 4; */
+            width: 200px;
+            background-color: skyblue;
+            color: white;
+
+          }
+
+          .menu123 a{
+            padding-left: 10px;
+
+              line-height: 1.5;
+            }
+            .I:hover .menu123{
+                display: block;
+            }
+            .x{
+                font-size: 5vh;
+                color: green;
+            }
+
+
+
+
+            .d1:hover{
+            transform: scale(1.1);
+            box-shadow: 5px 5px 15px 10px  darkmagenta;
+          }
+          .d1{
+            transition: 0.8s;
+          }
+
+
+
+
+
+            .image{
+                width: 100%;
+                height: 90vh;
+            }
+            .subimage1{
+                position:absolute;
+                top: 70vh;
+                z-index: 1;
+                left: 29%;
+                font-size: 180%;
+                color:white;
+            }
+           
+            .empty{
+                height: 6vh;
+                color: black;
+                margin-top: 20px;
+                margin-left: 5%;
+            }
+            .empty h1{
+                color: darkgreen;
+            }
+            .all{
+                width: 100%;
+                /* height: 50vh; */
+                background-color:white;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                
+            }
+           .d1{
+            width: 30%;
+            background-color: blue;
+            height: 40vh;
+            margin-left: 3%;
+            margin-right: 1%;
+                
+           }
+           .image1{
+            height: 40vh;
+            width: 100%;
+           }
+           .nothing{
+            height: 10vh;
+           }
+
+
+            .subpage7{
+                display: flex;
+                height: 15vh;
+                width: 100%;
+                background-color: gray;
+                /* justify-content: space-around; */
+                padding-top: 80px;
+                }
+.subpage71 p{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.subpage72 input{
+    background-color:white;
+    border-radius: 5px;
+    height: 8vh;
+    width: 200%;
+    margin-left: 40px;
+    border-color: aqua;
+
+  
+    
+}
+.subpage73 input{
+    height: 8vh;
+    width: 30%;
+    margin-left: 400px;
+    background-color: darkgray;
+    color: white;
+    border-color: black;
+    font-weight: 500;
+}
+/* --------------------------------------------page8----------------- */
+.contacts{
+    height: 80vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subcontacts{
+    height: 70vh;
+    width: 90%;
+    background-color: blue;
+    background-image: url("https://wallpaperaccess.com/full/1685418.jpg");
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+
+
+.locate{
+    display: flex;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+.fa-solid{
+    color: darkgoldenrod;
+    margin-top: 40px;
+}
+.locate p{
+    color: white;
+}
+.contact1 p{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+}
+.contact1 hr{
+    margin-left: 20px;
+    margin-right: 50px;
+    color: white;
+}
+.locate2{
+    font-size: 20px;
+    line-height: 1.8;
+    color: white;
+}
+.text h1{
+    color: blue;
+}
+.text p{
+    color: brown;
+    line-height: 1.5;
+    font-size: 120%;
+}
+
+
+
+  </style>
+    </head>
+    <body>
+        
+      <div class="row">
+        <div class="left">
+          <div class="I"><a href="index.html"> <B>Home</B></a></div>
+         <div class="I"> <a href="about.html"><B>ABOUT</B></a></div>
+          <div class="I"><B>ROOM</B>
+            <div class="menu123">
+              <a href="room.html">  DELUXE ROOM</a>
+              <a href="room1.html"> DOUBLE DELUXE</a>
+              <a href="room2.html"> EXECUTIVE ROOM</a>
+            </div>
+          
+          </div>
+          <div class="I"><a href="dinner.html"><B>DINING</B></a></div>
+        </div>
+
+        <div class="right">
+          <div class="I"><a href="facilities.html"><B>FACILITIES</B></a></div>
+          <div class="I"><a href="gallery.html"><B>GALLERY</B></a></div>
+          <div class="I"><B>BANQUET</B>
+
+            <div class="menu123">
+              <a href="banquet.html">  VAI JANTA HALL</a>
+              <a href="meeting.html"> MEETING HALL</a>
+              <a href="amarbati.html"> AMARBATI</a>
+            </div>
+
+
+          </div>
+          <div class="I"><a href="contact.html"><B>CONTACT US</B></div></a>
+    </div>
+      </div>
+
+
+          <div class="aboutimage">
+            <img class="image" src="g4.jpg"/>
+            <div class="subimage1">
+                <h1>Welcome To Our Family</h1> 
+                
+            </div>
+            
+          </div>
+          <div class="empty">
+            <h1>GALLERY</h1>
+          </div>
+          <div class="all">
+            
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/0SB4B-room1.jpg"/>
+            </div>
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/cJaMD-dining2.jpg"/>
+            </div>
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/n9UZY-img_3065.jpg"/>
+            </div>
+
+            
+            
+          </div>
+
+          <div class="nothing">
+
+          </div>
+
+          <div class="all">
+            
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/QO5aZ-g10.jpg"/>
+            </div>
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/BwtiO-g13.jpg"/>
+            </div>
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/7TTXp-room2.jpg"/>
+            </div>
+
+            
+            
+          </div>
+
+          <div class="nothing">
+
+          </div>
+
+          <div class="all">
+            
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/DHROl-img_3087.jpg"/>
+            </div>
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/J3joi-img_3183.jpg"/>
+            </div>
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/p3CxL-g12.jpg"/>
+            </div>
+
+            
+            
+          </div>
+
+          <div class="nothing">
+
+          </div>
+
+
+
+          <div class="all">
+            
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/NCWgH-g14.jpg"/>
+            </div>
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/KtLGG-img_3273.jpg"/>
+            </div>
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/eQGEv-img_3098.jpg"/>
+            </div>
+
+            
+            
+          </div>
+
+          <div class="nothing">
+
+          </div>
+
+
+          <div class="all">
+            
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/kFB8o-room3.jpg"/>
+            </div>
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/bmjND-img_3207.jpg"/>
+            </div>
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/KLpdl-g15.jpg"/>
+            </div>
+
+            
+            
+          </div>
+
+          <div class="nothing">
+
+          </div>
+
+
+          <div class="all">
+            
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/UN4qv-room4.jpg"/>
+            </div>
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/IuxM9-img_3074.jpg"/>
+            </div>
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/IalMI-img_3230.jpg"/>
+            </div>
+
+            
+            
+          </div>
+
+          <div class="nothing">
+
+          </div>
+
+
+          <div class="all">
+            
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/UPBqO-g16.jpg"/>
+            </div>
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/2YvuE-img_3091.jpg"/>
+            </div>
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/LqJuF-img_3281.jpg"/>
+            </div>
+
+            
+            
+          </div>
+
+          <div class="nothing">
+
+          </div>
+
+
+          <div class="all">
+            
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/6vhEB-room5.jpg"/>
+            </div>
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/Qep5L-img_3203.jpg"/>
+            </div>
+            <div class="d1">
+                <img class="image1" src="https://www.godavarivillageresort.com/images/gallery/galleryimages/ur7S1-g17.jpg"/>
+            </div>
+
+            
+            
+          </div>
+
+          <div class="nothing">
+
+          </div>
+
+
+
+
+
+          <div class="subpage7">
+            <div class="subpage71">
+              <p>SUBSCRIBE TO OUR NEWSLETTER</p>
+            </div>
+            <div class="subpage72"><input type="email" placeholder="E-MAIL ADRESS"/>
+            </div>
+            <div class="subpage73">
+              <input type="button" value="SUBSCRIBE"/>
+            </div>
+                      
+          </div>
+          <div class="contacts">
+            <div class="subcontacts">
+              <div class="contact1">
+                <p>ADRESS</p>
+                <hr>
+                <div class="locate">
+                  <i class="fa-solid fa-location-pin"></i>
+                  <p>Godavari Municipality Ward No. 3,Taukhel, Lalitpur</p>
+                </div>
+                <div class="locate">
+                  <i class="fa-solid fa-phone-volume"></i>
+                  <p>+977-1-5560675  5560777  5560062 </p>
+                </div>
+              
+    
+              </div>
+              <div class="contact1">
+                <p>EXPLORE</p>
+                <hr>
+                <div class="locate2">
+                  <p>About Us</p>
+                </div>
+                <div class="locate2">
+                  
+                  <p>contact</p>
+                </div>
+                <div class="locate2">
+
+                  <p>Facility </p>
+                </div>
+                <div class="locate2">
+                  <p>Gallery</p>
+                </div>
+                
+              </div>
+              <div class="contact1">
+
+                <p>QUICK LINKS</p>
+                <hr>
+                <div class="locate2">
+                  <p>Holistic Health Tourism</p>
+                </div>
+                <div class="locate2">
+                  
+                  <p>Executive Room</p>
+                </div>
+                <div class="locate2">
+
+                  <p>Amarbati Hall</p>
+                </div>
+                <div class="locate2">
+                  <p>Resort View</p>
+                </div>
+
+
+              </div>
+              <div class="contact1">
+
+                <p>GET IN TOUCH</p>
+                <hr>
+                <div class="locate2">
+                  <p>Bipana Bhandari (Sales Manager)<br>9841464876</p>
+                </div>
+                <div class="locate2">
+                  
+                  <p>Saroj Acharya (Sales Executive)<br>9841464876</p>
+                </div>
+                <div class="locate2">
+
+                  <p>Praven Acharya (MD)<br>9851221780</p>
+                </div>
+                
+
+
+              </div>
+            </div>
+          </div>    
+
+         
+      
+    </body>
+</html>
